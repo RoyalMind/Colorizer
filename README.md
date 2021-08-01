@@ -1,3 +1,14 @@
+# Instalación
+
+```xml
+<dependency>
+    <groupId>net.royalmind.minecraft.library.Colorizer</groupId>
+    <artifactId>Colorizer</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <scope>compile</scope>
+</dependency>
+```
+
 # Uso
 Para agregar un degradado, simplemente use las etiquetas <GRADIENT>
 
@@ -19,4 +30,4 @@ Colorizer.translate("<RAINBOW100>Este es otro arcoiris mamalon</RAINBOW>");
 Colorizer.translate("<SOLID:FF0080>Texto RGB Clasico");
 ```
 
-Si se usa la version legacy se asignará el color al valor admitido más cercano (esto también funciona con degradado)
+Si se usa la version legacy se asignará el color al valor admitido más cercano (esto también funciona con degradado).
