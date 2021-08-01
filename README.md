@@ -2,7 +2,7 @@
 
 ```xml
 <dependency>
-    <groupId>net.royalmind.minecraft.library.Colorizer</groupId>
+    <groupId>net.royalmind.minecraft.library</groupId>
     <artifactId>Colorizer</artifactId>
     <version>1.0-SNAPSHOT</version>
     <scope>compile</scope>
