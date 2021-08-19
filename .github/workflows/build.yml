@@ -1,4 +1,4 @@
-name: Advocatus Build
+name: Colorizer Build
 on:
   push:
     branches:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java: [16]
+        java: [11]
       fail-fast: true
     steps:
       - uses: actions/checkout@v2
@@ -42,9 +42,3 @@ jobs:
         run: mvn clean javadoc:javadoc package -Dbuild.number=${{ github.run_number }} -B
       - name: deploy for Java ${{ matrix.java }}
         run: mvn javadoc:javadoc deploy -Dbuild.number=${{ github.run_number }} -B -DaltDeploymentRepository=royalmind::default::https://packages.royalmind.net/repository/maven-snapshots/
-      # An artifact is generated in a compressed file according to each JDK build version.
-      - name: Upload Artifact Colorizer for Java ${{ matrix.java }}
-        uses: actions/upload-artifact@v2.2.4
-        with:
-          name: JDK${{ matrix.java }} Colorizer ${{ github.run_number }}
-          path: target/Colorizer.jar

@@ -8,7 +8,7 @@ import net.royalmind.minecraft.library.colorizer.Colorizer;
 
 public class Solid implements IPattern
 {
-    final Pattern pattern = Pattern.compile("<SOLID:([0-9A-Fa-f]{6})>");
+    final Pattern pattern = Pattern.compile("<S:([0-9A-Fa-f]{6})>");
 
     @Override
     public String getColoredText(String text)
