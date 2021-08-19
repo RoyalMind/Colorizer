@@ -10,7 +10,10 @@
 ```
 
 # Uso
-Para agregar un degradado, simplemente use las etiquetas <G></G> <RB></RB> <S>
+Para agregar un degradado, simplemente use las etiquetas 
+```java
+<G></G> <RB></RB> <S>
+```
 
 ### DEGRADADO
 ```java
