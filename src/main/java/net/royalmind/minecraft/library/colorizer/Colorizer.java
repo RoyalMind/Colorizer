@@ -80,8 +80,7 @@ public class Colorizer
      * @param textList La lista textos que estamos procesando.
      * @return La lista de texto procesado
      */
-    public static java.util.List<String> translate(java.util.List<String> textList) { return textList
-            .stream()
+    public static java.util.List<String> translate(java.util.List<String> textList) { return textList.stream()
             .map(Colorizer::translate)
             .collect(Collectors.toList()); }
 
