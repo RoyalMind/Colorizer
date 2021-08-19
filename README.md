@@ -4,7 +4,7 @@
 <dependency>
     <groupId>net.royalmind.minecraft.library</groupId>
     <artifactId>Colorizer</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <scope>compile</scope>
 </dependency>
 ```
