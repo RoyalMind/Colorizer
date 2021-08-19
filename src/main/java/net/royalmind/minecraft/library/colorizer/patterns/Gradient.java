@@ -7,7 +7,7 @@ import net.royalmind.minecraft.library.colorizer.Colorizer;
 
 public class Gradient implements IPattern
 {
-    final private Pattern pattern = Pattern.compile("<GRADIENT:([0-9A-Fa-f]{6})>(.*?)</GRADIENT:([0-9A-Fa-f]{6})>");
+    final private Pattern pattern = Pattern.compile("<G:([0-9A-Fa-f]{6})>(.*?)</G:([0-9A-Fa-f]{6})>");
 
     @Override
     public String getColoredText(String text) {

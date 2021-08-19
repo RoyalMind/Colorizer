@@ -8,7 +8,7 @@ import net.royalmind.minecraft.library.colorizer.Colorizer;
 
 public class Rainbow implements IPattern
 {
-    final Pattern pattern = Pattern.compile("<RAINBOW([0-9]{1,3})>(.*?)</RAINBOW>");
+    final Pattern pattern = Pattern.compile("<RB([0-9]{1,3})>(.*?)</RB>");
 
     /**
      * Aplica un patrón de arco iris al texto proporcionado.
