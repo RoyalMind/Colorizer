@@ -12,7 +12,7 @@
 # Uso
 Para agregar un degradado, simplemente use las etiquetas 
 ```java
-<G></G> <RB></RB> <S>
+<G:#HEX></G> <RB:#HEX></RB> <S:#HEX>
 ```
 
 ### DEGRADADO
