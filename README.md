@@ -1,5 +1,14 @@
 # Instalación
 
+#### Repositorio
+```xml
+<repository>
+    <id>royalmind-snapshots</id>
+    <url>https://packages.royalmind.net/repository/maven-snapshots/</url>
+</repository>
+```
+
+#### Dependencia
 ```xml
 <dependency>
     <groupId>net.royalmind.minecraft.library</groupId>
