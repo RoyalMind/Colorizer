@@ -41,4 +41,4 @@ jobs:
       #- name: build for Java ${{ matrix.java }}
       #  run: mvn clean javadoc:javadoc package -Dbuild.number=${{ github.run_number }} -B
       - name: deploy for Java ${{ matrix.java }}
-        run: mvn javadoc:javadoc deploy -Dbuild.number=${{ github.run_number }} -B -DaltDeploymentRepository=royalmind::default::https://packages.royalmind.net/repository/maven-public/
+        run: mvn javadoc:javadoc deploy -Dbuild.number=${{ github.run_number }} -B -DaltDeploymentRepository=royalmind::default::https://packages.royalmind.net/repository/maven-releases/
