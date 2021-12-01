@@ -1,7 +1,5 @@
 import org.junit.jupiter.api.Test;
-
-import net.royalmind.minecraft.library.colorizer.Colorizer;
-
+import net.royalmind.library.colorizer.Colorizer;
 import static org.junit.jupiter.api.Assertions.fail;
 
 public class TranslateTest

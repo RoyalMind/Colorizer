@@ -1,4 +1,4 @@
-package net.royalmind.minecraft.library.colorizer.patterns;
+package net.royalmind.library.colorizer.patterns;
 
 public interface IPattern
 {
