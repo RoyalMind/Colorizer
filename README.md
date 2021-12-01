@@ -42,4 +42,4 @@ Colorizer.translate("<RB100>Este es otro arcoiris mamalon</RB>");
 Colorizer.translate("<S:FF0080>Texto RGB Clasico");
 ```
 
-Si se usa la version legacy se asignará el color al valor admitido más cercano (esto también funciona con degradado).
+Si se usa la version legacy se asignará el color al valor admitido más cercano (esto también funciona con degradado y arcoíris).
