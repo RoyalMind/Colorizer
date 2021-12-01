@@ -38,7 +38,7 @@ jobs:
               "username": "${{ secrets.PACKAGES_USERNAME }}",
               "password": "${{ secrets.PACKAGES_PASSWORD }}"
             }]
-      - name: build for Java ${{ matrix.java }}
-        run: mvn clean javadoc:javadoc package -Dbuild.number=${{ github.run_number }} -B
+      #- name: build for Java ${{ matrix.java }}
+      #  run: mvn clean javadoc:javadoc package -Dbuild.number=${{ github.run_number }} -B
       - name: deploy for Java ${{ matrix.java }}
-        run: mvn javadoc:javadoc deploy -Dbuild.number=${{ github.run_number }} -B -DaltDeploymentRepository=royalmind::default::https://packages.royalmind.net/repository/maven-snapshots/
+        run: mvn javadoc:javadoc deploy -Dbuild.number=${{ github.run_number }} -B -DaltDeploymentRepository=royalmind::default::https://packages.royalmind.net/repository/maven-public/
