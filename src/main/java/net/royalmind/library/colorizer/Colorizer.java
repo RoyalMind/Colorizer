@@ -1,14 +1,16 @@
-package net.royalmind.minecraft.library.colorizer;
+package net.royalmind.library.colorizer;
 
 import java.awt.*;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.stream.Collectors;
 
 import com.google.common.collect.ImmutableMap;
 import net.md_5.bungee.api.ChatColor;
-import net.royalmind.minecraft.library.colorizer.patterns.*;
+import net.royalmind.library.colorizer.patterns.Gradient;
+import net.royalmind.library.colorizer.patterns.IPattern;
+import net.royalmind.library.colorizer.patterns.Rainbow;
+import net.royalmind.library.colorizer.patterns.Solid;
 
 public class Colorizer
 {
