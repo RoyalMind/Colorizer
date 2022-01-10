@@ -69,7 +69,7 @@ public class Colorizer
      * @param text El texto que queremos procesar.
      * @return El texto procesado con los patrones encontrados.
      */
-    public static String translate(String text)
+    public static String decorate(String text)
     {
         for (IPattern pattern : PATTERNS) { text = pattern.getColoredText(text); }
 
@@ -82,8 +82,8 @@ public class Colorizer
      * @param textList La lista textos que estamos procesando.
      * @return La lista de texto procesado
      */
-    public static java.util.List<String> translate(java.util.List<String> textList) { return textList.stream()
-            .map(Colorizer::translate)
+    public static java.util.List<String> decorate(java.util.List<String> textList) { return textList.stream()
+            .map(Colorizer::decorate)
             .collect(Collectors.toList()); }
 
     /**
@@ -92,7 +92,7 @@ public class Colorizer
      * @param text El texto a limpiar.
      * @return El texto limpio.
      * */
-    public static String strip(final String text) { return ChatColor.stripColor(Colorizer.translate(text)); }
+    public static String strip(final String text) { return ChatColor.stripColor(Colorizer.decorate(text)); }
 
     /**
      * Procesa una cadena para agregarle color.
@@ -100,7 +100,8 @@ public class Colorizer
      * @param text El texto que queremos procesar.
      * @return El texto procesado con los patrones encontrados.
      */
-    public static String translateLegacy(String text)
+    @Deprecated
+    public static String decorateLegacy(String text)
     {
         for (IPattern pattern : PATTERNS) { text = pattern.getColoredTextLegacy(text); }
 
@@ -113,8 +114,9 @@ public class Colorizer
      * @param textList La lista textos que estamos procesando.
      * @return La lista de texto procesado
      */
-    public static java.util.List<String> translateLegacy(java.util.List<String> textList) { return textList.stream()
-            .map(Colorizer::translateLegacy)
+    @Deprecated
+    public static java.util.List<String> decorateLegacy(java.util.List<String> textList) { return textList.stream()
+            .map(Colorizer::decorateLegacy)
             .collect(Collectors.toList()); }
 
     /**
@@ -124,5 +126,7 @@ public class Colorizer
      * @return El texto limpio.
      * */
     @Deprecated
-    public static String stripLegacy(final String text) { return ChatColor.stripColor(Colorizer.translateLegacy(text)); }
+    public static String stripLegacy(final String text) { return ChatColor.stripColor(Colorizer.decorateLegacy(text)); }
+
+    public static String transale(final String text) { return ChatColor.translateAlternateColorCodes('&', text); }
 }
