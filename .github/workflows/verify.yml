@@ -1,4 +1,4 @@
-name: Colorizer Build
+name: Colorizer Verify
 on:
   push:
     branches: [ main ]
