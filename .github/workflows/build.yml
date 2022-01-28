@@ -35,4 +35,4 @@ jobs:
               "password": "${{ secrets.PACKAGES_PASSWORD }}"
             }]
       - name: deploy for Java ${{ matrix.java }}
-        run: mvn clean package -B
+        run: mvn javadoc:javadoc clean package deploy -Dbuild.number=${{ github.run_number }} -B
