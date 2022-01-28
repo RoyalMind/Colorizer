@@ -4,7 +4,7 @@
 ```xml
 <repository>
     <id>royalmind-snapshots</id>
-    <url>https://packages.royalmind.net/repository/maven-snapshots/</url>
+    <url>https://repo.royalmind.net/repository/maven-snapshots/</url>
 </repository>
 ```
 
@@ -13,14 +13,13 @@
 <dependency>
     <groupId>net.royalmind.minecraft.library</groupId>
     <artifactId>Colorizer</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
-    <scope>compile</scope>
+    <version>2.0.1-SNAPSHOT</version>
 </dependency>
 ```
 
 # Uso
 Para agregar un degradado, simplemente use las etiquetas 
-```java
+```html
 <G:#HEX></G> <RB:#HEX></RB> <S:#HEX>
 ```
 
