@@ -1,6 +1,6 @@
-name: Colorizer Verify
+name: Colorizer Build
 on:
-  pull_request:
+  push:
     branches: [ main ]
 jobs:
   build:
@@ -34,5 +34,5 @@ jobs:
               "username": "${{ secrets.PACKAGES_USERNAME }}",
               "password": "${{ secrets.PACKAGES_PASSWORD }}"
             }]
-      - name: deploy for Java ${{ matrix.java }}
-        run: mvn javadoc:javadoc deploy -Dbuild.number=${{ github.run_number }} -B
+      - name: Build for Java ${{ matrix.java }}
+        run: mvn clean package -B

@@ -128,5 +128,5 @@ public class Colorizer
     @Deprecated
     public static String stripLegacy(final String text) { return ChatColor.stripColor(Colorizer.decorateLegacy(text)); }
 
-    public static String transale(final String text) { return ChatColor.translateAlternateColorCodes('&', text); }
+    public static String translate(final String text) { return ChatColor.translateAlternateColorCodes('&', text); }
 }
