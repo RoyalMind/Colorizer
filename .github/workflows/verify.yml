@@ -1,6 +1,6 @@
-name: Colorizer Build
+name: Colorizer Verify
 on:
-  push:
+  pull_request:
     branches: [ main ]
 jobs:
   build:
