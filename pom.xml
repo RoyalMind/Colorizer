@@ -16,7 +16,7 @@
     <distributionManagement>
         <snapshotRepository>
             <id>royalmind</id>
-            <url>https://packages.royalmind.net/repository/maven-snapshots/</url>
+            <url>https://repo.royalmind.net/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
