@@ -13,7 +13,7 @@
 <dependency>
     <groupId>net.royalmind.minecraft.library</groupId>
     <artifactId>Colorizer</artifactId>
-    <version>2.0.1-SNAPSHOT</version>
+    <version>2.0.2-SNAPSHOT</version>
 </dependency>
 ```
 
